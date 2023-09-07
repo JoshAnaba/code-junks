@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+section {
+  padding: 1rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.accordion-container {
+  max-width: 650px;
+  padding: 0.6rem;
+  border-radius: 12px;
+}
+
+.accordion-container:first-child {
+  background: #ffd1dc; /* Pastel pink */
+  border-bottom: 4px solid #ffb4a2; /* Pastel coral */
+}
+
+.accordion-container:nth-child(2) {
+  background: #d1e8e2; /* Pastel mint */
+  border-bottom: 4px solid #ffdac1; /* Pastel peach */
+}
+
+.accordion-container:nth-child(3) {
+  background: #e2c3e9; /* Pastel lavender */
+  border-bottom: 4px solid #ace1af; /* Pastel green */
+}
+
+.accordion-container:nth-child(4) {
+  background: #ff9aa2; /* Pastel red */
+  border-bottom: 4px solid #b5ead7; /* Pastel teal */
+}
+
+.accordion-header {
+  background-color: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.accordion-toggle {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: all 0.5s ease;
+}
+
+.accordion-toggle.active {
+  rotate: 133deg;
+}
+
+.accordion-title {
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.accordion-content {
+  background: transparent;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease;
+}
+
+.active-content {
+  grid-template-rows: 1fr;
+}
+
+.accordion-text {
+  background-color: transparent;
+  margin-top: 0.7rem;
+  padding-left: 2.3rem;
+  font-size: 0.9rem;
+  overflow: hidden;
+  line-height: 1.2rem;
+}
